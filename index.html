@@ -13,9 +13,14 @@
     <body>
         <div class="apresentacao">
             <header>
-                <button class="button-logo">
-                    <img src="./images/adaptive-icon.png" class="logo"/>
-                </button>
+                <div class="logos">
+                    <button type="button" class="button-logo light-logo" onclick="lightTheme()">
+                        <img src="./images/adaptive-icon.png" class="logo light-logoo"/>
+                    </button>
+                    <button type="button" id="dark-logo" class="button-logo"  onclick="changeTheme()">
+                        <img src="./images/dark-adaptive-icon.png" class="logo  dark-logo"/>
+                    </button>
+                </div>
                 <!-- <label class="title">E-PET</label> -->
                 <ul>
                     <li><a href="#" class="active">Home</a></li>
@@ -25,23 +30,23 @@
             </header>
             <div class="slogan">
                 <div class="frases">
-                    <label>Faça a diferença com o E-PET</label>
+                    <label id="main-phrase">Faça a diferença com o E-PET</label>
                     <h2>Apenas o início da missão de fazer do mundo um lugar melhor para todos...</h2>                    
                         
                     <button type="button" class="button">
-                        <a href="#">Baixe o E-PET</a>
+                        <a href="#" class="install-button">Baixe o E-PET</a>
                         <i class="fa-brands fa-google-play"></i>
                     </button>                    
                 </div>
                 
                 <div class="examples">
-                    <img src="./images/smartphone.png" />
+                    <img id="smartphone" src="./images/smartphone.png" />
                 </div>
             </div>           
         </div>
 
         <div class="about-us">       
-            <img src="./images/paw-icon.png">
+            <img id="paw-icon" src="./images/paw-icon.png">
             <div class="text">
                 <label class="label">Como surgiu o E-PET?</label>
                 <div class="phrases">
@@ -99,10 +104,10 @@
             </div>            
             <div class="top">
                 <div>
-                    <p>Junte-se a nós nessa causa</p>
-                    <p>Baixe o E-PET</p>
+                    <p id="join-us">Junte-se a nós nessa causa</p>
+                    <p id="download-phrase">Baixe o E-PET</p>
                     <button type="button" class="button">
-                        <a href="#">Baixe o E-PET</a>
+                        <a href="#" class="install-button">Baixe o E-PET</a>
                         <i class="fa-brands fa-google-play"></i>
                     </button> 
                 </div> 
@@ -155,7 +160,7 @@
         </div>
 
         <footer>
-            <p>&copy E-PET 2022</p>
+            <p id="p-footer">&copy E-PET 2022</p>
             <p class="copyright">Todos os direitos reservados</p>
         </footer>
 
@@ -163,5 +168,6 @@
         <script src="js/owl/jquery.min.js"></script>
         <script src="js/owl/owl.carousel.min.js"></script>
         <script src="js/setup.js"></script>
+        <script src="./js/domConfig.js"></script>
     </body>
 </html>

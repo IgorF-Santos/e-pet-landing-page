@@ -1,8 +1,15 @@
+:root{
+    --main-color: #FB474E;
+
+    --after-margin-left: 33%;
+    --after-width: 30%;
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Open Sans', 'sans-serif';
+    font-family: 'Open Sans', 'sans-serif';    
 }
 
 body{
@@ -11,7 +18,7 @@ body{
 }
 
 .apresentacao{
-    background-color: #FB474E;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     color: #FFF;        
@@ -33,20 +40,41 @@ header .title{
     text-shadow: 2px 4px 5px #000;
 }
 
+header .logos{    
+    margin-top: 3%;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
 header .button-logo{
     background-color: transparent;
-    border: none;
-    margin-top: 3%;
-    cursor: pointer;
+    border: none;    
+    cursor: pointer;    
+}
+
+header .light-logo{
+    
+    left: 24%;
+    top: 3%;
 }
 
 header .logo{
-    width: 120px;    
     border-radius: 50%;
+    box-shadow: 4px 4px 15px #000;    
+    transition: opacity 1s;
+}
+
+.light-logoo{   
+    width: 120px;
+}
+
+.dark-logo{
+    width: 95px;
 }
 
 header .button-logo:hover .logo{
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 header ul{
@@ -90,23 +118,23 @@ header ul li a:hover{
 }
 
 .apresentacao .frases label{    
-    font-size: 76px;
+    font-size: 72px;
     font-weight: bold;
     flex-wrap: wrap;
     max-width: 800px;
     opacity: 0.9;
     display: flex;
     flex-direction: column;
-    margin-bottom: 4%;
-    
+    margin-bottom: 4%;    
 }
 
-.apresentacao .frases label::after{
+.apresentacao .frases #main-phrase::after{
     content: "";
-    width: 36%;
+    width: var(--after-width);
     background-color: #FFF;
     height: 4px;    
-    margin-left: 33%;
+    margin-left: var(--after-margin-left);
+    align-self: flex-start;
 }
 
 .apresentacao .frases h2{    
@@ -135,18 +163,18 @@ header ul li a:hover{
     padding: 2%;
     border-radius: 25px;
     margin-top: 12%;
-    width: 26%
+    width: 28%
 }
 
 .button a{
     text-decoration: none;
     font-weight: 800;
-    color: #FB474E ;
+    color: var(--main-color) ;
     font-size: 18px;
 }
 
 .button i{
-    color: #FB474E;
+    color: var(--main-color);
     font-size: 26px;
 }
 
@@ -183,7 +211,7 @@ header ul li a:hover{
 }
 
 .label{
-    color: #FB474E;
+    color: var(--main-color);
     font-weight: 800;
     font-size: 36px;
     display: flex;
@@ -195,7 +223,7 @@ header ul li a:hover{
     content: "";
     width: 7px;
     height: 66px;
-    background-color: #FB474E;    
+    background-color: var(--main-color);    
     margin-right: 1%;    
 }
 
@@ -213,7 +241,7 @@ header ul li a:hover{
     margin-top: 10%;
     margin-bottom: 15%;
     padding: 4%;
-    background-color: #FB474E;
+    background-color: var(--main-color);
     display: flex;
     flex-direction: column;
     border-radius: 30px;
@@ -329,7 +357,7 @@ header ul li a:hover{
 }
 
 footer{
-    background-color: #FB474E;
+    background-color: var(--main-color);
     height: 200px;
     display: flex;
     flex-direction: column;
@@ -392,12 +420,12 @@ footer .copyright{
 }
 
 .my-carousel .owl-prev span{    
-    color:#FB474E;
+    color:var(--main-color);
     font-size: 48px;
 }
 
 .my-carousel .owl-next span{    
-    color:#FB474E;
+    color:var(--main-color);
     font-size: 48px;
 }
 
