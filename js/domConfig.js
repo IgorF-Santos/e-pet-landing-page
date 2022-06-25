@@ -32,6 +32,7 @@ function changeTheme(){
     presentation.style.borderBottomLeftRadius = '15%';
     mainPhrase.innerHTML = 'Tornando a diferença possível com o E-PET Gerência';
     mainPhrase.style.maxWidth = '870px';
+    mainPhrase.style.display = 'block';
     document.documentElement.style.setProperty('--after-margin-left', '0%');
     document.documentElement.style.setProperty('--after-width', '42%');
     qrCodePhrase.innerHTML = 'Traga sua empresa para o nosso time';
@@ -169,6 +170,7 @@ function lightTheme(){
     presentation.style.borderBottomLeftRadius = '0%';
     mainPhrase.innerHTML = 'Faça a diferença com o E-PET';
     mainPhrase.style.maxWidth = '800px';
+    mainPhrase.style.display = 'flex';
     document.documentElement.style.setProperty('--after-margin-left', '33%');
     document.documentElement.style.setProperty('--after-width', '30%');
     qrCodePhrase.innerHTML = 'Junte-se a nós nessa causa';
