@@ -4,7 +4,7 @@
     }
 
     .item {
-        width: 200px !important
+        width: 200px !important;
     }
 
     .item:hover {
@@ -299,8 +299,8 @@
     }
 
     .slogan {
-        flex-direction: column-reverse;
-        align-items: center;
+        flex-direction: column-reverse !important;
+        align-items: center !important;
     }
 
     .slogan .frases {
@@ -413,7 +413,7 @@
     }
 
     .examples img {
-        width: 350px;
+        width: 350px !important;
     }
 
     .install {
@@ -469,7 +469,7 @@
     }
 
     .examples img {
-        width: 320px;
+        width: 320px !important;
     }
 
     .label {

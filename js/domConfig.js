@@ -48,7 +48,7 @@ function changeTheme(){
     
     // Tem o dobro de imagens (24) por conta do loop do carrossel. 
     // Caso o loop estivesse desativado, o total de imagens deve ser 12
-    const teste = [
+    const imgArray = [
         './images/e-pet-gerencia/Tela Inicial.jpg',
         './images/e-pet-gerencia/Tela Dashboard.jpg',
         './images/e-pet-gerencia/Tela Confirmar Dados.jpg',
@@ -80,10 +80,60 @@ function changeTheme(){
     for(let i = 0; i < imgs.length; i++){
         //arr.push(imgs[i]);
         for(let i=0; i < imgs.length; i++){
-            imgs[i].setAttribute('src', teste[i]);
+            imgs[i].setAttribute('src', imgArray[i]);
         }
     }
     theme = true
+
+    if($(window).width() <= '1600') {
+        $('.apresentacao .frases #main-phrase').css({
+            'display': 'block'
+        })
+    }
+
+    if($(window).width() <= '1250') {
+        $('.apresentacao .frases #main-phrase').css({
+          'fontSize': '60px'
+        });        
+
+        $('.examples img').css({
+            'margin-left': '5%'
+          });
+      }
+
+      if($(window).width() <= '1200') {
+        $('.apresentacao .frases #main-phrase').css({
+          'fontSize': '54px'
+        });
+        $('.install .top button a').css({
+            'fontSize': '14px'
+        })
+        $('.light-logoo').css({
+            'width': '85px'
+        })
+        $('.dark-logo').css({
+            'width': '110px'
+        })        
+      }
+
+      if($(window).width() <= '992') {
+        $('header').css({      
+            'flexDirection': 'column',
+            'alignSelf': 'flex-end',
+            'marginRight': '2%'
+    
+        })   
+        $('.light-logoo').css({
+            'width': '65px'
+        })
+        $('.dark-logo').css({
+            'width': '80px'
+        })
+        $('.apresentacao .frases #main-phrase').css({
+            'fontSize': '26px'
+          });
+      }
+    
 }
 }
 
@@ -135,7 +185,7 @@ function lightTheme(){
     
     // Tem o dobro de imagens (24) por conta do loop do carrossel. 
     // Caso o loop estivesse desativado, o total de imagens deve ser 12
-    const teste = [
+    const imgArray = [
         './images/Tela Descrição Denúncia - Modo Claro.jpg',
         './images/Tela Endereço Denúncia - Modo Claro.jpg',
         './images/Tela Inicial - Modo Claro.jpg',
@@ -166,9 +216,60 @@ function lightTheme(){
     for(let i = 0; i < imgs.length; i++){
         //arr.push(imgs[i]);
         for(let i=0; i < imgs.length; i++){
-            imgs[i].setAttribute('src', teste[i]);
+            imgs[i].setAttribute('src', imgArray[i]);
         }
     }
     theme = false
+
+
+    if($(window).width() <= '1600') {
+        $('.apresentacao .frases #main-phrase').css({
+            'display': 'flex'
+        })
+    }
+
+    if($(window).width() <= '1250') {
+        $('.apresentacao .frases #main-phrase').css({
+          'fontSize': '68px'
+        });        
+
+        $('.examples img').css({
+            'margin-left': '0%'
+          });
+      }
+
+      if($(window).width() <= '1200') {
+        $('.apresentacao .frases #main-phrase').css({
+          'fontSize': '64px'
+        });
+        $('.install .top button a').css({
+            'fontSize': '16px'
+        })
+        $('.light-logoo').css({
+            'width': '110px'
+        })
+        $('.dark-logo').css({
+            'width': '85px'
+        })        
+      }
+
+      if($(window).width() <= '992') {
+        $('header').css({      
+            'flexDirection': 'column',
+            'alignSelf': 'flex-start',
+            'marginLeft': '2%'
+    
+        })   
+        $('.light-logoo').css({
+            'width': '80px'
+        })
+        $('.dark-logo').css({
+            'width': '65px'
+        })
+        $('.apresentacao .frases #main-phrase').css({
+            'fontSize': '32px',
+            'maxWidth': '300px'
+          });
+      }
 }
 }
