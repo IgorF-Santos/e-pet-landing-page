@@ -1,0 +1,553 @@
+@media (max-width: 1600px) {
+    * {
+        transition: 2s;
+    }
+
+    .item {
+        width: 200px !important
+    }
+
+    .item:hover {
+        width: 210px !important
+    }
+}
+
+@media (max-width: 1450px) {
+    * {
+        transition: 2s;
+    }
+
+    .about-us .text {
+        width: 42%
+    }
+
+    .item {
+        width: 180px !important
+    }
+
+    .item:hover {
+        width: 185px !important
+    }
+
+    .install .qrcode img {
+        width: 450px
+    }
+
+    .our-squad {
+        width: 65%;
+    }
+
+    .team {
+        height: 65%;
+        width: 100%;
+    }
+}
+
+@media (max-width: 1350px) {
+    * {
+        transition: 2s;
+    }
+
+    .install .qrcode img {
+        width: 380px
+    }
+
+    .install .top .button {
+        height: 14%;
+    }
+
+    .team img {
+        width: 130px
+    }
+
+
+    .team div:hover img {
+        width: 140px;
+    }
+
+    .examples img {
+        width: 450px;
+    }
+}
+
+@media (max-width: 1250px) {
+    * {
+        transition: 2s;
+    }
+
+    .apresentacao .frases #main-phrase {
+        /*  margin-left: 30%; */
+        font-size: 68px;
+    }
+}
+
+@media (max-width: 1200px) {
+    * {
+        transition: 2s;
+    }
+
+    .apresentacao .frases #main-phrase {
+        /*  margin-left: 30%; */
+        font-size: 64px;
+    }
+
+    .examples img {
+        width: 380px;
+    }
+
+    .light-logoo {
+        width: 110px;
+    }
+
+    .dark-logo {
+        width: 85px;
+    }
+
+    header .logos {
+        margin-top: 4%;
+    }
+
+    .about-us .text {
+        width: 44%
+    }
+
+    .about-us img {
+        width: 250px
+    }
+
+    .label {
+        font-size: 32px;
+    }
+
+    .label::before {
+        height: 50px;
+    }
+
+    .our-squad {
+        width: 70%;
+    }
+
+    .install .qrcode img {
+        width: 340px
+    }
+}
+
+@media (max-width: 1135px) {
+    * {
+        transition: 2s;
+    }
+
+    header .logos {
+        margin-top: 5%;
+    }
+
+    .install .top .button {
+        height: 16%;
+        width: 48%;
+    }
+
+    .team img {
+        width: 120px
+    }
+
+
+    .team div:hover img {
+        width: 130px;
+    }
+
+    .team-information {
+        margin-left: 2%;
+        margin-right: 2%;
+    }
+
+    .apresentacao .frases #main-phrase {
+        font-size: 58px;
+        max-width: 600px;
+    }
+
+    .apresentacao .frases h2 {
+        max-width: 600px;
+    }
+
+    .examples {
+        margin-right: 2%;
+    }
+
+    .examples img {
+        width: 320px
+    }
+
+    .item {
+        width: 170px !important
+    }
+
+    .item:hover {
+        width: 175px !important
+    }
+
+    .install .qrcode img {
+        width: 320px
+    }
+
+    .install .top p {
+        font-size: 26px;
+    }
+
+}
+
+@media (max-width: 1050px) {
+    * {
+        transition: 2s;
+    }
+
+    .label {
+        font-size: 28px;
+    }
+
+    .label::before {
+        height: 40px;
+    }
+
+    .about-us img {
+        width: 220px
+    }
+
+    .about-us .text {
+        width: 50%;
+        height: 52%;
+    }
+
+    .install .top p {
+        font-size: 24px;
+    }
+
+    .install .qrcode img {
+        width: 300px
+    }
+
+    .team {
+        height: 60%;
+        width: 100%;
+    }
+
+    .team div img {
+        width: 100px;
+    }
+
+    .team div:hover img {
+        width: 110px;
+    }
+
+    .team-information {
+        margin-left: 2%;
+        margin-right: 2%;
+        height: 50%;
+    }
+
+    .install .top .button {
+        height: 18%;
+        width: 50%;
+    }
+
+    header .logos {
+        margin-top: 6%;
+    }
+}
+
+
+
+/* Mobile */
+
+@media (max-width: 992px) {
+    * {
+        transition: 2s;
+    }
+
+    header {
+        flex-direction: column;
+        align-self: flex-start;
+        justify-content: space-between;
+        height: 150px;
+        margin-left: 2%;
+
+    }
+
+    .light-logoo {
+        width: 80px;
+    }
+
+    .dark-logo {
+        width: 65px;
+    }
+
+    header ul {
+        width: 195px;
+    }
+
+    header ul li a {
+        font-size: 18px;
+    }
+
+    .apresentacao .frases #main-phrase {
+        font-size: 32px;
+        max-width: 300px;
+    }
+
+    .apresentacao .frases h2 {
+        max-width: 400px;
+        font-size: 18px;
+    }
+
+    .slogan {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+
+    .slogan .frases {
+        align-self: center;
+    }
+
+    .slogan .frases .button a {
+        font-size: 16px;
+    }
+
+    .slogan .frases button {
+        width: 38%
+    }
+
+    .examples img {
+        width: 400px;
+    }
+
+    .examples {
+        margin-bottom: 4%;
+    }
+
+    .about-us {
+        flex-direction: column;
+        align-items: center;
+        height: 80vh;
+    }
+
+    .about-us img {
+        width: 200px;
+    }
+
+    .about-us .text {
+        width: 70%;
+        height: 32%;
+        margin-top: 2%;
+    }
+
+
+    .owl-carousel .item {
+        padding: 2%;
+        margin-top: 2%;
+        margin-bottom: 2%;
+        width: 220px !important;
+    }
+
+    .owl-carousel .item:hover {
+        width: 225px !important;
+    }
+
+    .install {
+        height: 80vh;
+        padding-bottom: 0%;
+    }
+
+    .install .top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .install-content {
+        justify-content: space-between;
+        height: 40%;
+
+    }
+
+    .install .top p {
+        font-size: 24px;
+    }
+
+    .install .top button {
+        margin: auto;
+        margin-top: 18%;
+    }
+
+    .our-squad {
+        height: 80vh;
+    }
+
+    .team {
+        flex-wrap: wrap;
+        width: 70%;
+        align-self: center;
+        height: 100%;
+        align-content: center;
+    }
+
+    .team-content {
+        width: 35% !important;
+        height: 35% !important;
+        margin-bottom: 8%;
+    }
+
+    footer p {
+        color: #FFFAFA;
+        font-size: 20px;
+    }
+
+    footer .copyright {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 750px) {
+    * {
+        transition: 2s;
+    }
+
+    .examples img {
+        width: 350px;
+    }
+
+    .install {
+        height: 70vh;
+    }
+
+    .install .qrcode img {
+        width: 260px
+    }
+
+    .team {
+        width: 80%;
+        height: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    * {
+        transition: 2s;
+    }
+
+    .owl-carousel .item {
+        width: 180px !important;
+    }
+
+    .owl-carousel .item:hover {
+        width: 185px !important;
+    }
+
+    .install .qrcode img {
+        width: 230px
+    }
+
+    .our-squad {
+        width: 75%;
+    }
+
+    .team {
+        width: 90%;
+        height: 100%;
+    }
+
+    .team-content {
+        width: 38% !important;
+        height: 32% !important;
+        margin-bottom: 8%;
+    }
+}
+
+@media (max-width: 520px) {
+    * {
+        transition: 2s;
+    }
+
+    .examples img {
+        width: 320px;
+    }
+
+    .label {
+        font-size: 22px;
+    }
+
+    .label::before {
+        height: 40px;
+    }
+
+    .install {
+        height: 50vh;
+        padding-bottom: 0%;
+    }
+
+    .install .top {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+    }
+
+    .install-content {
+        justify-content: space-between;
+        height: 40%;
+
+    }
+
+    .install .top p {
+        font-size: 18px;
+    }
+
+    .install .top button {
+        margin: auto;
+        margin-top: 10%;
+        height: 35% !important;
+    }
+
+    .install .scan {
+        padding: 5px;
+        border-radius: 10px;
+    }
+
+    .install .scan img {
+        width: 30px;
+    }
+
+    .install .qrcode img {
+        width: 200px;
+
+    }
+
+    .install .qrcode {
+        border-radius: 20px;
+    }
+
+    .team img {
+        width: 90px !important;
+    }
+
+    .team div:hover img {
+        width: 95px !important;
+    }
+
+    .team-content p {
+        font-size: 14px;
+    }
+
+    .owl-carousel .item {
+        width: 150px !important;
+    }
+
+    .owl-carousel .item:hover {
+        width: 155px !important;
+    }
+
+    .about-us {
+        height: 100vh;
+    }
+}
